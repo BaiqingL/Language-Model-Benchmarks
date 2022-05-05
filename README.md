@@ -23,16 +23,14 @@ A further description, results, and discussion of this project can be found in o
 # Files & Directories
 Report.pdf - contains our report on the project
 
-data - contains the data we used to train and test our models (it contains a separate README)
+data - contains the data we used to train and test our models as described below:
 
-BERT - contains the code used to fine-tune BERT
+- The training and validation data is the text files containing "train" and "dev" in their names respectively inside /data/2017_English_final/GOLD/Subtask_A/
+	
+- The translated test data is /data/2017_Arabic_train_final/GOLD/SemEval2017-task4-train.subtask-A.english.txt
 
-multiBERT - contains the code used to fine-tune multiBERT
+- The test data is all the files containing "arabic" and "subtask-A" in /data/2017_Arabic_train_final/GOLD 
 
-Roberta - contains the code used to fine-tune Roberta
+BERT, multiBERT, Roberta, XLM-Roberta, T5, and MT5 - are all directories which contain the code used to fine-tune and evaluate their respective models.
 
-XLM-Roberta - contains the code used to fine-tune XLM-Roberta
-
-T5 - contains the code used to fine-tune T5
-
-MT5 - contains the code used to fine-tune MT5 (MT5.ipynb) and a similar approach to compare with (mt5_soft_prompt_tuning.ipynb)
+Note: MT5 contains a notebook called MT5-36_acc.ipynb which contains a version fine-tuned with a lower learning rate as reported, but the model we used for comparison is MT5.ipynb
